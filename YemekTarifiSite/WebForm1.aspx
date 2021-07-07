@@ -1,27 +1,5 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="YemekTarifiSite.WebForm1" %>
-
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
-    <link href="Tasarim.css" rel="stylesheet" />
-</head>
-<body>
-    <form id="form1" runat="server">
-        <div>
-            <asp:Button ID="Button1" runat="server" Text="Button" CssClass="Buton" />
-        </div>
-       <div>
-           <asp:Label ID="Label1" runat="server" CssClass="Label" Text="Yemek Sitesi CSS tanıtımı yapıyoruz."></asp:Label>
-       </div>
-        <div>
-
-        </div>
-        <div class="Div">
-
-        </div>
-    </form>
-</body>
-</html>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Kullanici.Master" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="YemekTarifiSite.WebForm1" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+</asp:Content>

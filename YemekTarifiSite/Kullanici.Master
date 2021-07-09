@@ -12,51 +12,57 @@
             width: 100%;
         }
 
-        .auto-style2 {
-            text-align: center;
-        }
-
         .auto-style3 {
             text-align: center;
-            width: 157px;
+            width: 145px;
+            height: 39px;
         }
 
-        .auto-style4 {
-            width: 157px;
-        }
         .auto-style5 {
-            text-align: justify;
+            text-align: center;
+            height: 39px;
         }
+
         .auto-style6 {
             text-align: left;
         }
+
         .auto-style7 {
             font-size: large;
         }
+        .auto-style8 {
+            text-align: center;
+            height: 39px;
+            width: 115px;
+        }
+        .auto-style9 {
+            text-align: center;
+            height: 39px;
+            width: 135px;
+        }
+        .auto-style10 {
+            text-align: center;
+            width: 144px;
+            height: 39px;
+        }
     </style>
+    <link href="StyleSheet1.css" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">
         <div style="height: 150px; width: 700px; margin-left: 300px; text-align: left; background-color: #ce7171;">
         </div>
         <div style="margin-left: 300px; width: 700px; height: 20px;"></div>
-        <div style="margin-left: 300px; width: 700px; height: 30px; background-color: #ce7171;">
+        <div style="margin-left: 300px; width: 700px; height: 45px; background-color: #ea8080;">
             <table class="auto-style1">
                 <tr>
-                    <td class="auto-style2"><strong><a href="AnaSayfa.aspx">ANA SAYFA</a></strong></td>
+                    <td class="auto-style10"><strong><a href="AnaSayfa.aspx">ANA SAYFA</a></strong></td>
                     <td class="auto-style3"><strong><a href="GununYemegi.aspx">GUNUN YEMEĞİ</a></strong></td>
-                    <td class="auto-style2"><strong><a href="TarifOner.aspx">TARİF ÖNER</a></strong></td>
-                    <td class="auto-style2"><strong><a href="Hakkimizda.aspx">HAKKIMIZDA</a></strong></td>
+                    <td class="auto-style8"><strong><a href="TarifOner.aspx">TARİF ÖNER</a></strong></td>
+                    <td class="auto-style9"><strong><a href="Hakkimizda.aspx">HAKKIMIZDA</a></strong></td>
                     <td class="auto-style5"><strong><a href="iletisim.aspx">İLETİŞİM</a></strong></td>
                 </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    <td class="auto-style4">&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-            </table>
+                </table>
         </div>
         <div style="margin-left: 300px; width: 700px; height: 20px;"></div>
         <div style="margin-left: 300px; width: 700px; height: auto;">
@@ -71,7 +77,8 @@
                             <asp:Label ID="Label1" runat="server" BorderStyle="None" Text='<%# Eval("KategoriAd") %>'></asp:Label>
                             &nbsp;(
                             <asp:Label ID="Label2" runat="server" Text='<%# Eval("KategoriAdet") %>'></asp:Label>
-                            )</div>
+                            )
+                        </div>
                     </ItemTemplate>
                 </asp:DataList>
             </div>

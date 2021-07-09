@@ -111,6 +111,7 @@
     <Compile Include="AnaSayfa.aspx.designer.cs">
       <DependentUpon>AnaSayfa.aspx</DependentUpon>
     </Compile>
+    <Compile Include="sqlsinif.cs" />
     <Compile Include="TarifOner.aspx.cs">
       <DependentUpon>TarifOner.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

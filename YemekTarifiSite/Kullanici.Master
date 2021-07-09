@@ -15,25 +15,34 @@
         .auto-style2 {
             text-align: center;
         }
+
+        .auto-style3 {
+            text-align: center;
+            width: 157px;
+        }
+
+        .auto-style4 {
+            width: 157px;
+        }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
-        <div style="height: 150px; width: 700px; margin-left: 300px; text-align: left; background-color: #99FF99;">
+        <div style="height: 150px; width: 700px; margin-left: 300px; text-align: left; background-color: #ce7171;">
         </div>
         <div style="margin-left: 300px; width: 700px; height: 20px;"></div>
-        <div style="margin-left: 300px; width: 700px; height: 30px; background-color: #99FF99;">
+        <div style="margin-left: 300px; width: 700px; height: 30px; background-color: #ce7171;">
             <table class="auto-style1">
                 <tr>
                     <td class="auto-style2"><strong><a href="AnaSayfa.aspx">ANA SAYFA</a></strong></td>
-                    <td class="auto-style2"><strong><a href="GununYemegi.aspx">YEMEĞİ</a></strong></td>
+                    <td class="auto-style3"><strong><a href="GununYemegi.aspx">GUNUN YEMEĞİ</a></strong></td>
                     <td class="auto-style2"><strong><a href="TarifOner.aspx">TARİF ÖNER</a></strong></td>
                     <td class="auto-style2"><strong><a href="Hakkimizda.aspx">HAKKIMIZDA</a></strong></td>
                     <td class="auto-style2"><strong><a href="iletisim.aspx">İLETİŞİM</a></strong></td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style4">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -41,13 +50,21 @@
             </table>
         </div>
         <div style="margin-left: 300px; width: 700px; height: 20px;"></div>
-        <div style="margin-left: 300px; width: 200px; height: 200px; background-color: #99FF99;">
-            <div style="margin-left: 234px; height: 321px; width: 464px; background-color: #99FF99;">
+        <div style="margin-left: 300px; width: 700px; height: 300px;">
+            <div style="width: 200px; height: 100px; float: left; background-color: #ce7171;"></div>
+            <div style="width: 450px; height: 300px; float: left; background-color: #ce7171; margin-left: 50px;">
+
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                 </asp:ContentPlaceHolder>
+
             </div>
+
+
+
+
+
         </div>
+
     </form>
 </body>
 </html>
-

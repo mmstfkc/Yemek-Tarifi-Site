@@ -30,16 +30,19 @@
         .auto-style7 {
             font-size: large;
         }
+
         .auto-style8 {
             text-align: center;
             height: 39px;
             width: 115px;
         }
+
         .auto-style9 {
             text-align: center;
             height: 39px;
             width: 135px;
         }
+
         .auto-style10 {
             text-align: center;
             width: 144px;
@@ -62,7 +65,7 @@
                     <td class="auto-style9"><strong><a href="Hakkimizda.aspx">HAKKIMIZDA</a></strong></td>
                     <td class="auto-style5"><strong><a href="iletisim.aspx">İLETİŞİM</a></strong></td>
                 </tr>
-                </table>
+            </table>
         </div>
         <div style="margin-left: 300px; width: 700px; height: 20px;"></div>
         <div style="margin-left: 300px; width: 700px; height: auto;">
@@ -74,7 +77,11 @@
                 <asp:DataList ID="DataList1" runat="server" Width="200px">
                     <ItemTemplate>
                         <div style="border: thin solid #cccccc">
+                            <a href="KategoriDetay.aspx?Kategoriid=<%# Eval("Kategoriid") %>" style="color:orange;">
+                                <strong>
                             <asp:Label ID="Label1" runat="server" BorderStyle="None" Text='<%# Eval("KategoriAd") %>'></asp:Label>
+                            </strong>
+                            </a>
                             &nbsp;(
                             <asp:Label ID="Label2" runat="server" Text='<%# Eval("KategoriAdet") %>'></asp:Label>
                             )

@@ -4,9 +4,10 @@
     <style type="text/css">
         .auto-style11 {
             font-size: x-large;
+            color: #FF0066;
         }
         .auto-style12 {
-            background-color: #CCCCCC;
+            background-color: #FFFF99;
         }
         .auto-style13 {
             color: #FFFFFF;
@@ -37,7 +38,7 @@
                 </tr>
                 <tr>
                     <td><strong>Eklenme Tarihi:</strong><asp:Label ID="Label6" runat="server" CssClass="auto-style13" Text='<%# Eval("YemekTarih") %>'></asp:Label>
-                        &nbsp; - <strong>Yemek Puanı:<em><asp:Label ID="Label7" runat="server" Text='<%# Eval("YemekPuan") %>'></asp:Label>
+                        &nbsp; - <strong>Yemek Puanı:<em><asp:Label ID="Label7" runat="server" CssClass="auto-style13" Text='<%# Eval("YemekPuan") %>'></asp:Label>
                         </em></strong></td>
                 </tr>
                 <tr>

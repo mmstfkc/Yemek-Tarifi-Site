@@ -72,6 +72,7 @@
     <Content Include="iletisim.aspx" />
     <Content Include="Kullanici.css" />
     <Content Include="resimler\mucver001.jpg" />
+    <Content Include="resimler\team.jpg" />
     <Content Include="TarifOner.aspx" />
     <Content Include="Web.config" />
     <Content Include="AnaSayfa.aspx" />

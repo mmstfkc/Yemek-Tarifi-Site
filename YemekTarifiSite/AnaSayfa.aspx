@@ -6,9 +6,11 @@
             font-size: x-large;
             color: #FF0066;
         }
+
         .auto-style12 {
             background-color: #FFFF99;
         }
+
         .auto-style13 {
             color: #FFFFFF;
         }
@@ -20,8 +22,10 @@
             <table class="auto-style1">
                 <tr>
                     <td class="auto-style12"><strong>
-                        <asp:Label ID="Label3" runat="server" CssClass="auto-style11" Text='<%# Eval("YemekAd") %>'></asp:Label>
-                        </strong></td>
+                        <a href="YemekDetay.aspx?Yemekid=3">
+                            <asp:Label ID="Label3" runat="server" CssClass="auto-style11" Text='<%# Eval("YemekAd") %>'></asp:Label>
+                        </a>
+                    </strong></td>
                 </tr>
                 <tr>
                     <td><strong>Malzemeler:</strong>

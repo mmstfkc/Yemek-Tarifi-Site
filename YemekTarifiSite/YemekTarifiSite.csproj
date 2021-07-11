@@ -72,6 +72,8 @@
     <Content Include="iletisim.aspx" />
     <Content Include="KategoriDetay.aspx" />
     <Content Include="Kullanici.css" />
+    <Content Include="Banner Foto\head1.jpg" />
+    <Content Include="Banner Foto\Head2.jpg" />
     <Content Include="resimler\mucver001.jpg" />
     <Content Include="resimler\team.jpg" />
     <Content Include="TarifOner.aspx" />

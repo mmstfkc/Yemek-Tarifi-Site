@@ -54,6 +54,7 @@
 <body>
     <form id="form1" runat="server">
         <div style="height: 150px; width: 700px; margin-left: 300px; text-align: left; background-color: #ce7171;">
+            <asp:Image ID="Image1" runat="server" Height="154px" ImageUrl="~/Banner Foto/head1.jpg" Width="703px" />
         </div>
         <div style="margin-left: 300px; width: 700px; height: 20px;"></div>
         <div style="margin-left: 300px; width: 700px; height: 45px; background-color: #ea8080;">

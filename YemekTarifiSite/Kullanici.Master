@@ -46,7 +46,7 @@
             height: 39px;
         }
     </style>
-    <link href="StyleSheet1.css" rel="stylesheet" />
+    <link href="Kullanici.css" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">

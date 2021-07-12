@@ -14,19 +14,26 @@ namespace YemekTarifiSite
         {
             Panel2.Visible = false;
             Panel4.Visible = false;
+
+            
+
+            if (Page.IsPostBack == false)
+            {
+                //Kategori Listesi
+                SqlCommand komut2 = new SqlCommand("Select * from Tbl_Kategoriler", bgl.baglanti());
+                SqlDataReader dr2 = komut2.ExecuteReader();
+                DropDownList1.DataTextField = "KategoriAd";
+                DropDownList1.DataValueField = "Kategoriid";
+                DropDownList1.DataSource = dr2;
+                DropDownList1.DataBind();
+            }
+
             SqlCommand komut = new SqlCommand("Select * from Tbl_Yemekler", bgl.baglanti());
             SqlDataReader dr = komut.ExecuteReader();
             DataList1.DataSource = dr;
             DataList1.DataBind();
 
-
-            //Kategori Listesi
-            SqlCommand komut2 = new SqlCommand("Select * from Tbl_Kategoriler", bgl.baglanti());
-            SqlDataReader dr2 = komut2.ExecuteReader();
-            DropDownList1.DataTextField = "KategoriAd";
-            DropDownList1.DataValueField = "Kategoriid";
-            DropDownList1.DataSource = dr2;
-            DropDownList1.DataBind();
+            
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -47,6 +54,17 @@ namespace YemekTarifiSite
         protected void Button4_Click(object sender, EventArgs e)
         {
             Panel4.Visible = false;
+        }
+
+        protected void Btn_Ekle_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut = new SqlCommand("insert into Tbl_Yemekler(yemekad,yemekmalzeme,yemektarif,kategoriid) values(@p1,@p2,@p3,@p4)", bgl.baglanti());
+            komut.Parameters.AddWithValue("@p1", TextBox1.Text);
+            komut.Parameters.AddWithValue("@p2", TextBox2.Text);
+            komut.Parameters.AddWithValue("@p3", TextBox3.Text);
+            komut.Parameters.AddWithValue("@p4", DropDownList1.SelectedValue);
+            komut.ExecuteNonQuery();
+            bgl.baglanti().Close();
         }
     }
 }

@@ -5,24 +5,31 @@
         .auto-style8 {
             background-color: #CCCCCC;
         }
+
         .auto-style12 {
             width: 35px;
         }
+
         .auto-style13 {
             width: 38px;
         }
+
         .auto-style14 {
             font-size: x-large;
         }
+
         .auto-style15 {
             background-color: #00FFFF;
         }
+
         .auto-style16 {
             font-size: small;
         }
+
         .auto-style17 {
             width: 46px;
         }
+
         .auto-style18 {
             width: 600px;
         }
@@ -34,10 +41,10 @@
             <tr>
                 <td class="auto-style12"><strong>
                     <asp:Button ID="Button1" runat="server" CssClass="auto-style14" Height="30px" OnClick="Button1_Click" Text="+" Width="30px" />
-                    </strong></td>
+                </strong></td>
                 <td class="auto-style13"><strong>
                     <asp:Button ID="Button2" runat="server" CssClass="auto-style14" Height="30px" OnClick="Button2_Click" Text="-" Width="30px" />
-                    </strong></td>
+                </strong></td>
                 <td>KATEGORİ LİSTESİ</td>
             </tr>
         </table>
@@ -51,27 +58,31 @@
                             <asp:Label ID="Label1" runat="server" CssClass="auto-style10" Text='<%# Eval("KategoriAd") %>'></asp:Label>
                         </td>
                         <td class="auto-style17">
-                            <asp:Image ID="Image2" runat="server" Height="30px" ImageUrl="~/iconlar/delete.png" Width="30px" />
+                            <a href="Kategoriler.aspx?Kategoriid=<%# Eval("Kategoriid")%>&islem=sil">
+                                <asp:Image ID="Image2" runat="server" Height="30px" ImageUrl="~/iconlar/delete.png" Width="30px" />
+                            </a>
+
                         </td>
                         <td class="auto-style9">
                             <a href="KategoriDuzenle.aspx?Kategoriid=<%# Eval("Kategoriid") %>">
-                            <asp:Image ID="Image3" runat="server" Height="30px" ImageUrl="~/iconlar/update.png" Width="30px" />
+                                <asp:Image ID="Image3" runat="server" Height="30px" ImageUrl="~/iconlar/update.png" Width="30px" />
                             </a>
                         </td>
                     </tr>
                 </table>
             </ItemTemplate>
         </asp:DataList>
-&nbsp;</asp:Panel>
+        &nbsp;
+    </asp:Panel>
     <asp:Panel ID="Panel3" runat="server" CssClass="auto-style8">
-        <table class="auto-style7" style="margin-top:15px;">
+        <table class="auto-style7" style="margin-top: 15px;">
             <tr>
                 <td class="auto-style12"><strong>
                     <asp:Button ID="Button3" runat="server" CssClass="auto-style14" Height="30px" Text="+" Width="30px" OnClick="Button3_Click" />
-                    </strong></td>
+                </strong></td>
                 <td class="auto-style13"><strong>
-                    <asp:Button ID="Button4" runat="server" CssClass="auto-style14" Height="30px"  Text="-" Width="30px" OnClick="Button4_Click" />
-                    </strong></td>
+                    <asp:Button ID="Button4" runat="server" CssClass="auto-style14" Height="30px" Text="-" Width="30px" OnClick="Button4_Click" />
+                </strong></td>
                 <td>KATEGORİ EKLEME</td>
             </tr>
         </table>
@@ -98,7 +109,7 @@
                 <td>&nbsp;</td>
                 <td><strong>
                     <asp:Button ID="Btn_Ekle" runat="server" CssClass="auto-style16" Text="EKLE" Width="100px" OnClick="Btn_Ekle_Click" />
-                    </strong></td>
+                </strong></td>
             </tr>
         </table>
     </asp:Panel>

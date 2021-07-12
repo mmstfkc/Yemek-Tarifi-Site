@@ -27,6 +27,9 @@
             width: 30px;
             background-color: #CCCCCC;
         }
+        .auto-style20 {
+            text-align: center;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -80,15 +83,39 @@
             <tr>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
-                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>YEMEK AD:</td>
+                <td>
+                    <asp:TextBox ID="TextBox1" runat="server" Width="300px"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>MALZEMELER:</td>
+                <td>
+                    <asp:TextBox ID="TextBox2" runat="server" Height="75px" TextMode="MultiLine" Width="300px"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>YEMEK TARİFİ:</td>
+                <td>
+                    <asp:TextBox ID="TextBox3" runat="server" Height="100px" TextMode="MultiLine" Width="300px"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>KATEGORİ:</td>
+                <td>
+                    <asp:DropDownList ID="DropDownList1" runat="server" Width="300px">
+                    </asp:DropDownList>
+                </td>
             </tr>
             <tr>
                 <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style20"><strong>
+                    <asp:Button ID="Btn_Ekle" runat="server" CssClass="auto-style8" Height="30px" Text="Ekle" Width="100px" />
+                    </strong></td>
             </tr>
             <tr>
-                <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>

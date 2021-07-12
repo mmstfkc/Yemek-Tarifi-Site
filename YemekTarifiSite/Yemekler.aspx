@@ -1,32 +1,40 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="Yemekler.aspx.cs" Inherits="YemekTarifiSite.Yemekler" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
         .auto-style8 {
             font-size: large;
             font-weight: bold;
         }
+
         .auto-style10 {
             font-size: large;
             font-weight: bold;
             margin-left: 0px;
         }
+
         .auto-style12 {
             width: 343px;
         }
+
         .auto-style13 {
             background-color: #CCCCCC;
         }
+
         .auto-style15 {
             width: 30px;
         }
+
         .auto-style16 {
             width: 100%;
             background-color: #CCCCCC;
         }
+
         .auto-style18 {
             width: 30px;
             background-color: #CCCCCC;
         }
+
         .auto-style20 {
             text-align: center;
         }
@@ -38,10 +46,10 @@
             <tr>
                 <td class="auto-style18"><strong>
                     <asp:Button ID="Button1" runat="server" CssClass="auto-style8" Height="30px" OnClick="Button1_Click" Text="+" Width="32px" />
-                    </strong></td>
+                </strong></td>
                 <td class="auto-style18"><strong>
                     <asp:Button ID="Button2" runat="server" CssClass="auto-style10" Height="30px" OnClick="Button2_Click" Text="-" Width="30px" />
-                    </strong></td>
+                </strong></td>
                 <td class="auto-style13"><strong>YEMEK LİSTESİ</strong></td>
             </tr>
         </table>
@@ -57,9 +65,9 @@
                         <td>
                             <asp:Image ID="Image3" runat="server" Height="30px" ImageUrl="~/iconlar/delete.png" Width="30px" />
                         </td>
-                        <td>
+                        <td><a href="YemekDuzenle.aspx?yemekid=<%# Eval("Yemekid") %>">
                             <asp:Image ID="Image2" runat="server" Height="30px" ImageUrl="~/iconlar/update.png" Width="30px" />
-                        </td>
+                        </a></td>
                     </tr>
                 </table>
             </ItemTemplate>
@@ -70,10 +78,10 @@
             <tr>
                 <td class="auto-style15"><strong><em>
                     <asp:Button ID="Button3" runat="server" CssClass="auto-style8" Height="30px" OnClick="Button3_Click" Text="+" Width="30px" />
-                    </em></strong></td>
+                </em></strong></td>
                 <td class="auto-style15"><strong><em>
                     <asp:Button ID="Button4" runat="server" CssClass="auto-style8" Height="30px" OnClick="Button4_Click" Text="-" Width="30px" />
-                    </em></strong></td>
+                </em></strong></td>
                 <td>YEMEK EKLEME</td>
             </tr>
         </table>
@@ -113,7 +121,7 @@
                 <td>&nbsp;</td>
                 <td class="auto-style20"><strong>
                     <asp:Button ID="Btn_Ekle" runat="server" CssClass="auto-style8" Height="30px" OnClick="Btn_Ekle_Click" Text="Ekle" Width="100px" />
-                    </strong></td>
+                </strong></td>
             </tr>
             <tr>
                 <td>&nbsp;</td>

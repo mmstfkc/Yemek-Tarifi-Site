@@ -79,6 +79,7 @@
     <Content Include="Kullanici.css" />
     <Content Include="Banner Foto\head1.jpg" />
     <Content Include="Banner Foto\Head2.jpg" />
+    <Content Include="Mesajlar.aspx" />
     <Content Include="resimler\mucver001.jpg" />
     <Content Include="resimler\team.jpg" />
     <Content Include="TarifOner.aspx" />
@@ -147,6 +148,13 @@
     </Compile>
     <Compile Include="Kullanici.Master.designer.cs">
       <DependentUpon>Kullanici.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Mesajlar.aspx.cs">
+      <DependentUpon>Mesajlar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mesajlar.aspx.designer.cs">
+      <DependentUpon>Mesajlar.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="AnaSayfa.aspx.cs">

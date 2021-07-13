@@ -85,6 +85,7 @@
     <Content Include="Mesajlar.aspx" />
     <Content Include="resimler\mucver001.jpg" />
     <Content Include="resimler\team.jpg" />
+    <Content Include="Tarifler.aspx" />
     <Content Include="TarifOner.aspx" />
     <Content Include="Web.config" />
     <Content Include="AnaSayfa.aspx" />
@@ -182,6 +183,13 @@
       <DependentUpon>AnaSayfa.aspx</DependentUpon>
     </Compile>
     <Compile Include="sqlsinif.cs" />
+    <Compile Include="Tarifler.aspx.cs">
+      <DependentUpon>Tarifler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tarifler.aspx.designer.cs">
+      <DependentUpon>Tarifler.aspx</DependentUpon>
+    </Compile>
     <Compile Include="TarifOner.aspx.cs">
       <DependentUpon>TarifOner.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

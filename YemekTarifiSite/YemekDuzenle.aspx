@@ -51,14 +51,16 @@
             </td>
         </tr>
         <tr>
+            <td class="auto-style9"><strong>Yemek Resim:</strong></td>
+            <td class="auto-style6">
+                <asp:FileUpload ID="FileUpload1" runat="server" Width="250px" />
+            </td>
+        </tr>
+        <tr>
             <td class="auto-style9">&nbsp;</td>
             <td class="auto-style11"><strong>
                 <asp:Button ID="Button1" runat="server" CssClass="auto-style12" Text="Güncelle" OnClick="Button1_Click" Width="250px" />
                 </strong></td>
-        </tr>
-        <tr>
-            <td class="auto-style9">&nbsp;</td>
-            <td class="auto-style11">&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style9">&nbsp;</td>

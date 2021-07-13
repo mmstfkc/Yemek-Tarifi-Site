@@ -12,7 +12,7 @@
             margin-left: 40px;
         }
         .auto-style11 {
-            margin-right: 0px;
+            margin-right: 117px;
         }
     </style>
 </asp:Content>
@@ -40,7 +40,7 @@
                 </tr>
                 <tr>
                     <td class="auto-style2">
-                        <asp:Image ID="Image2" runat="server" Height="157px" Width="319px" />
+                        <asp:Image ID="Image2" runat="server" Height="157px" Width="319px" ImageUrl='<%# Eval("YemekResim") %>' />
                     </td>
                 </tr>
                 <tr>

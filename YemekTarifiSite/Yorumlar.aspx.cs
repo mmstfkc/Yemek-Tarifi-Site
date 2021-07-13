@@ -13,7 +13,7 @@ namespace YemekTarifiSite
         protected void Page_Load(object sender, EventArgs e)
         {
             Panel2.Visible = false;
-            Panel4.Visible = false;
+            Panel4.Visible = false; 
             // Onaylı yorumlar
             SqlCommand komut = new SqlCommand("Select * from Tbl_Yorumlar where yorumonay=1", bgl.baglanti());
             SqlDataReader dr = komut.ExecuteReader();

@@ -12,7 +12,7 @@ namespace YemekTarifiSite
         sqlsinif bgl = new sqlsinif();
         protected void Page_Load(object sender, EventArgs e)
         {
-            SqlCommand komut = new SqlCommand("Select * from Tbl_GununYemegi",bgl.baglanti());
+            SqlCommand komut = new SqlCommand("Select * from Tbl_Yemekler where durum='True'", bgl.baglanti());      
             SqlDataReader oku = komut.ExecuteReader();
             DataList2.DataSource = oku;
             DataList2.DataBind();

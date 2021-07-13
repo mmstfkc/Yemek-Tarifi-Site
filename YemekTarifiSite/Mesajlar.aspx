@@ -23,8 +23,8 @@
         }
 
         .auto-style21 {
-            width: 382px;
-        }
+        width: 382px;
+    }
 
         </style>
 </asp:Content>

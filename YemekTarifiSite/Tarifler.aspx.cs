@@ -12,6 +12,7 @@ namespace YemekTarifiSite
         sqlsinif bgl = new sqlsinif();
         protected void Page_Load(object sender, EventArgs e)
         {
+            
             Panel2.Visible = false;
             SqlCommand komut = new SqlCommand("Select * from Tbl_Tarifler", bgl.baglanti());
             SqlDataReader dr = komut.ExecuteReader();

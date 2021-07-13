@@ -45,7 +45,7 @@
                             <asp:Label ID="Label1" runat="server" CssClass="auto-style10" Text='<%# Eval("TarifAd") %>'></asp:Label>
                         </td>
                         <td class="auto-style9">
-                            <a href="#">
+                            <a href="TarifOnerDetay.aspx?Tarifid=<%#Eval("Tarifid") %>">
                                 <asp:Image ID="Image3" runat="server" Height="30px" ImageUrl="~/iconlar/update.png" Width="30px" />
                             </a>
                         </td>

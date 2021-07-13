@@ -63,7 +63,8 @@
                             <asp:Label ID="Label1" runat="server" Text='<%# Eval("YemekAd") %>'></asp:Label>
                         </td>
                         <td>
-                            <asp:Image ID="Image3" runat="server" Height="30px" ImageUrl="~/iconlar/delete.png" Width="30px" />
+                            <a href="Yemekler.aspx?Yemekid=<%# Eval("Yemekid")%>&islem=sil">
+                                <asp:Image ID="Image3" runat="server" Height="30px" ImageUrl="~/iconlar/delete.png" Width="30px" /></a>
                         </td>
                         <td><a href="YemekDuzenle.aspx?yemekid=<%# Eval("Yemekid") %>">
                             <asp:Image ID="Image2" runat="server" Height="30px" ImageUrl="~/iconlar/update.png" Width="30px" />

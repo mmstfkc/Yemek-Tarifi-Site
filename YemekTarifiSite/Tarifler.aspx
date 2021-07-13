@@ -55,4 +55,37 @@
         </asp:DataList>
 
     </asp:Panel>
+    <asp:Panel ID="Panel3" runat="server" CssClass="auto-style8">
+        <table class="auto-style7">
+            <tr>
+                <td class="auto-style20"><strong>
+                    <asp:Button ID="Button3" runat="server" CssClass="auto-style14" Height="30px" Text="+" Width="30px" OnClick="Button3_Click"  />
+                </strong></td>
+                <td class="auto-style19"><strong>
+                    <asp:Button ID="Button4" runat="server" CssClass="auto-style14" Height="30px" Text="-" Width="30px" OnClick="Button4_Click"  />
+                </strong></td>
+                <td><strong>TARİF ÖNERİ LİSTESİ</strong></td>
+            </tr>
+        </table>
+    </asp:Panel>
+    <asp:Panel ID="Panel4" runat="server" CssClass="auto-style8">
+        <asp:DataList ID="DataList2" runat="server" Width="446px" CssClass="auto-style15" style="background-color: #66CCFF">
+            <ItemTemplate>
+                <table class="auto-style7">
+                    <tr>
+                        <td class="auto-style21">
+                            <asp:Label ID="Label2" runat="server" CssClass="auto-style10" Text='<%# Eval("TarifAd") %>'></asp:Label>
+                        </td>
+                        <td class="auto-style9">
+                            <a href="TarifOnerDetay.aspx?Tarifid=<%#Eval("Tarifid") %>">
+                                <asp:Image ID="Image4" runat="server" Height="30px" ImageUrl="~/iconlar/update.png" Width="30px" />
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </ItemTemplate>
+        </asp:DataList>
+
+    </asp:Panel>
+    
 </asp:Content>

@@ -7,9 +7,6 @@
             width: 100%;
         }
 
-        .auto-style16 {
-            text-align: right;
-        }
         .auto-style17 {
             text-align: left;
             margin-left: 40px;
@@ -74,9 +71,16 @@
                 </td>
             </tr>
             <tr>
+                <td class="auto-style20"><strong>Kateegori:</strong></td>
+                <td class="auto-style17">
+                    <asp:DropDownList ID="DropDownList1" runat="server" Width="250px">
+                    </asp:DropDownList>
+                </td>
+            </tr>
+            <tr>
                 <td class="auto-style19">&nbsp;</td>
                 <td class="auto-style15"><strong>
-                    <asp:Button ID="Btn_Onayla" runat="server" CssClass="auto-style18" Text="Onayla" Width="150px" />
+                    <asp:Button ID="Btn_Onayla" runat="server" CssClass="auto-style18" Text="Onayla" Width="150px" OnClick="Btn_Onayla_Click" />
                     </strong></td>
             </tr>
             <tr>

@@ -51,5 +51,21 @@ namespace YemekTarifiSite
             komut.ExecuteNonQuery();
             bgl.baglanti().Close();
         }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            // Tüm durumları false hale getirme
+            SqlCommand komut = new SqlCommand("update tbl_yemekler set durum=0", bgl.baglanti());
+            komut.ExecuteNonQuery();
+            bgl.baglanti().Close();
+
+
+            // Seçilen yemeği günün yemegi haline getirme
+            SqlCommand komut2 = new SqlCommand("Update tbl_yemekler set durum=1 where yemekid=@p1", bgl.baglanti());
+            komut2.Parameters.AddWithValue("@p1", id);
+            komut2.ExecuteNonQuery();
+            bgl.baglanti().Close();
+
+        }
     }
 }

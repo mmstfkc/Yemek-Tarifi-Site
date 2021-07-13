@@ -9,16 +9,17 @@
             width: 147px;
             text-align: right;
         }
-        .auto-style10 {
-            font-weight: bold;
-        }
         .auto-style11 {
             text-align: center;
+        }
+        .auto-style12 {
+            font-weight: bold;
+            font-size: large;
         }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;
     <table class="auto-style8">
         <tr>
             <td class="auto-style9"><strong></strong></td>
@@ -52,7 +53,17 @@
         <tr>
             <td class="auto-style9">&nbsp;</td>
             <td class="auto-style11"><strong>
-                <asp:Button ID="Button1" runat="server" CssClass="auto-style10" Text="Güncelle" OnClick="Button1_Click" />
+                <asp:Button ID="Button1" runat="server" CssClass="auto-style12" Text="Güncelle" OnClick="Button1_Click" Width="250px" />
+                </strong></td>
+        </tr>
+        <tr>
+            <td class="auto-style9">&nbsp;</td>
+            <td class="auto-style11">&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="auto-style9">&nbsp;</td>
+            <td class="auto-style11"><strong>
+                <asp:Button ID="Button2" runat="server" CssClass="auto-style12" OnClick="Button2_Click" Text="Günün Yemeği Seç" Width="250px" />
                 </strong></td>
         </tr>
     </table>

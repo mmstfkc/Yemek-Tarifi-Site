@@ -41,7 +41,7 @@
                 <td class="auto-style19"><strong>
                     <asp:Button ID="Button2" runat="server" CssClass="auto-style14" Height="30px"  Text="-" Width="30px" OnClick="Button2_Click" />
                     </strong></td>
-                <td>YORUM&nbsp; LİSTESİ</td>
+                <td><strong>YORUM&nbsp; LİSTESİ</strong></td>
             </tr>
         </table>
     </asp:Panel>
@@ -68,6 +68,6 @@
                 </table>
             </ItemTemplate>
         </asp:DataList>
-        &nbsp;
+        
     </asp:Panel>
     </asp:Content>
